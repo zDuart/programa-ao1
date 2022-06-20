@@ -1,0 +1,29 @@
+<script>
+    const A = Number(prompt("Infrome o A"))
+    const B = Number(prompt("Informe o B"))
+    const C = Number(prompt("Inoforme o C"))
+
+    const delta = Math.sqrt((B ** 2) - 4 * A * C)
+    const bhaskara1 = (-B + delta) / 2*A
+    const bhaskara2 = (-B - delta) / 2*A
+
+    if (A === 0) {
+        document.write("Não é Bhaskara")
+    }
+    else
+    if (delta < 0)
+    document.write(`Não existe raizes`)
+    else
+    if(delta === 0){
+    document.write(`</br>Existe somente uma raíz`)
+    document.write(`</br>O X¹ é: ${bhaskara1}`)
+    document.write(`</br>O X² é: ${bhaskara2}`)
+    }
+    else{
+        document.write(`O resultado esta da maneira correta`)
+    document.write(`</br>O X¹ é: ${bhaskara1}`)
+    document.write(`</br>O X² é: ${bhaskara2}`)
+    }
+
+
+</script>

@@ -1,0 +1,17 @@
+<script>
+    const lado01 = Number(prompt("Informe o primeiro valor"))
+    const lado02 = Number(prompt("Informe o segundo valor"))
+    const lado03 = Number(prompt("Informe o terceiro valor"))
+
+    if ((lado01 + lado02) < lado03 || (lado01 + lado03) < lado02 || (lado02 + lado03) < lado01)
+        document.write("nao é um triangulo")
+    else
+        if (lado01 === lado02 && lado02 === lado03)
+            document.write("O triangulo é Equilátero")
+        else
+            if (lado01 != lado02 && lado01 != lado03 && lado02 != lado03)
+                document.write("O triangulo é escaleno")
+            else
+                document.write("O trinagulo é isósceles")
+
+</script>

@@ -1,0 +1,15 @@
+<script>
+    const media = Number(prompt("Informe a media anual do aluno"))
+    const faltas = Number(prompt("Informe quantas faltas o aluno teve:"))
+    const aulas = Number(prompt("Informe quantas aulas foram ministradas:"))
+
+    const porcentagemFaltas = (faltas / aulas) * 100
+
+    if (porcentagemFaltas > 25)
+        document.write("O aluno foi reprovado por faltas")
+    else
+        if (media >= 7)
+            document.write("O aluno foi aprovado")
+        else
+            document.write("O aluno ficou em exame")
+</script>
